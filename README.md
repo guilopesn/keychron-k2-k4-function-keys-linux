@@ -43,4 +43,4 @@ If you want to simply drag/drop the file that you create manually in the steps p
 
 Your keyboard renponds now first for the F1-F12 Keys, using **Fn** you can access the multimedia keys as well.
 
-If you using a model without the "PrintScreen Key", you can use it by pressing **Fn+PgUp** for about 4 seconds, than this key will turn into your "PrintScreen Key", you want to revert to "PageUp", just repeat the process by holding **Fn+PgUp** for about 4 seconds again.
+If you are using a model without the "PrintScreen Key", you can use it by pressing **Fn+PgUp** for about 4 seconds, than this key will turn into your "PrintScreen Key", if you want to revert to "PageUp", just repeat the process by holding **Fn+PgUp** for about 4 seconds again.
