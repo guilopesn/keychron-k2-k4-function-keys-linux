@@ -1,4 +1,4 @@
-# Enable Function Keys On The Keychron K2 Mechanical Keyboard Under Linux
+# Enable Function Keys On The Keychron K2/K4 Mechanical Keyboard Under Linux
 
 
 Below, you'll find the steps required to create a systemd command that will run at boot to disable the media keys and restore f1-f12 functionality.
@@ -9,13 +9,13 @@ Open a terminal window and enter the following command:
 
 `sudo nano /etc/systemd/system/keychron.service`
 
-## Step 2
+## **Step** 2
 
 Paste the following into the window:
 
 ```
 [Unit]
-Description=The command to make the Keychron K2 work
+Description=The command to make the Keychron K2-k4 work with Function keys
 
 [Service]
 Type=oneshot
@@ -31,12 +31,16 @@ Press `ctrl+o` and then `ctrl+x` to exit.
 
 In the terminal, type the following:
 
-`systemctl enable keychron`
+`sudo systemctl enable keychron`
 
 ## Step 4
 
 That's it! A reboot, and you'll see that the function keys have been re-enabled.
 
-## Closing Remarks
+## Tips
 
 If you want to simply drag/drop the file that you create manually in the steps provided, I have it under the scripts folder in this repo. Download it and drop it in `/etc/systemd/system/`, doing Step 3 at the end.
+
+Your keyboard renponds now first for the F1-F12 Keys, using **Fn** you can access the multimedia keys as well.
+
+If you using a model without the "PrintScreen Key", you can use it by pressing **Fn+PgUp** for about 4 seconds, than this key will turn into your "PrintScreen Key", you want to revert to "PageUp", just repeat the process by holding **Fn+PgUp** for about 4 seconds again.
